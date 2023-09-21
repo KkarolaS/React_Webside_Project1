@@ -1,13 +1,404 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
+  width: auto;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 20px;
+}
+.page-navbar {
+  background-color: #4e4e4e;
+  height: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.company-name {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.link-container {
+  display: none;
+}
+
+.landing-page {
+  height: 100vh;
+  top: 0;
+  background-image: url(./assets/image/background-photo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+}
+
+.landing-page-shadow {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.main-slogan {
+  width: 90%;
+  margin-top: 40%;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.second-slogan {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.button-offer {
+  height: 40px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  border: 3px solid #ffffff;
+  background-color: rgba(196, 196, 196, 0);
+}
+
+.button-offer a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.about {
+  background-color: rgba(241, 241, 241, 1);
+  color: rgba(21, 45, 65, 1);
+  padding: 20px;
+}
+
+.about-title {
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 42px;
+}
+
+.employees-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 21px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 50px;
+  align-items: center;
+}
+
+.employee {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  text-align: justify;
+}
+
+.employee-image {
+  width: 190px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  align-self: center;
+  background-size: cover;
+  background-position: center center;
+}
+
+.employee-info {
+  font-size: 18px;
+}
+
+.name {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.info {
+  font-weight: 400;
+}
+
+.offer {
+  background-color: rgba(64, 93, 120, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-shadow {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.offer-title {
+  color: rgba(255, 255, 255, 1);
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 30px;
+}
+
+.offer-container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.box {
+  width: 310px;
+  height: 310px;
+  background-color: rgba(241, 241, 241, 1);
+  color: rgba(0, 0, 0, 1);
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-box1 {
+  flex-direction: column;
+  position: relative;
+}
+
+.box1-eclise {
+  width: 35px;
+  aspect-ratio: 1;
+  background-color: rgba(224, 122, 100, 1);
+  border-radius: 50%;
+  position: absolute;
+  top: -17px;
+  left: -17px;
+}
+
+.offer1-text1,
+.offer-box {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.offer1-text2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* .page-footer {
+  background-color: rgba(78, 78, 78, 1);
+  color: rgba(255, 255, 255, 1);
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+} */
+
+/* .insta-fb-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+} */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media screen and (min-width: 577px) {
+  .page-navbar {
+    justify-content: space-between;
+  }
+
+  .link-container {
+    display: none;
+  }
+
+  .main-slogan {
+    width: 80%;
+    margin-top: 30%;
+  }
+
+  .offer-title {
+    font-size: 26px;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media screen and (min-width: 992px) {
+  .page-container {
+    width: auto;
+  }
+
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .page-navbar {
+    height: 50px;
+    padding: 10px 0;
+    justify-content: space-between;
+  }
+
+  .link-container {
+    list-style-type: none;
+    display: flex;
+    gap: 45px;
+  }
+
+  .nav-link {
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+
+  .nav-contact {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .landing-page-shadow {
+    padding: 10px 0;
+  }
+
+  .main-slogan {
+    width: 60%;
+    margin-top: 25%;
+  }
+
+  .second-slogan {
+    margin-top: 60px;
+  }
+
+  .button-offer {
+    margin-top: 60px;
+    transition: background-color 1s linear, color 1s linear;
+  }
+
+  .button-offer:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+
+  .button-offer a:hover {
+    color: black;
+  }
+
+  .about {
+    padding: 10px 0;
+  }
+
+  .about-title {
+    margin-top: 60px;
+    text-align: start;
+  }
+
+  .employees-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .employee {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .employees-container .employee:nth-of-type(even) {
+    .employee-info {
+      order: -1;
+      text-align: right;
+    }
+  }
+
+  .employee-info {
+    width: 70%;
+  }
+
+  .offer {
+    height: 689px;
+    flex-direction: row;
+  }
+
+  .offer-shadow {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .offer-title {
+    margin-top: 60px;
+    font-size: 35px;
+    text-align: start;
+  }
+
+  .offer-container {
+    width: 720px;
+    height: 450px;
+    margin: 60px auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 60px;
+  }
+
+  .box {
+    width: 198px;
+    height: 198px;
+    transition: transform 0.5s ease;
+  }
+
+  .box:hover {
+    transform: scale(1.05);
+  }
+
+  .box1-eclise {
+    width: 22px;
+    height: 22px;
+    top: -10px;
+    left: -10px;
+  }
+
+  /* .page-footer {
+    height: 70px;
+    padding: 10px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 0;
+  } */
 }
