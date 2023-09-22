@@ -1,0 +1,29 @@
+.about {
+  background-color: rgba(241, 241, 241, 1);
+  color: rgba(21, 45, 65, 1);
+  padding: 20px;
+}
+
+.aboutTitle {
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 42px;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .about {
+    padding: 10px 0;
+  }
+
+  .aboutTitle {
+    margin-top: 60px;
+    text-align: start;
+  }
+}

@@ -3,10 +3,11 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import OfferSection from "./components/OfferSection/OfferSection";
 import AboutSection from "./components/AboutSection/AboutSection";
+import classes from "./App.module.css";
 
 function App() {
   return (
-    <div className="app">
+    <div className={classes.app}>
       <Header />
       <Main />
       <AboutSection />

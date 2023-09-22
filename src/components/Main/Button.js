@@ -1,6 +1,8 @@
+import classes from "./Button.module.css";
+
 const Button = () => {
   return (
-    <button className="button-offer">
+    <button className={classes.buttonOffer}>
       <a href="#offer">oferta</a>
     </button>
   );

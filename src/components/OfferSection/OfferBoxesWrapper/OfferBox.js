@@ -1,9 +1,17 @@
+import classes from "./OfferBox.module.css";
+
 const OfferBox = ({ name, isNew }) => {
   return (
-    <div className={isNew ? "offer-box1 box" : "offer-box box"}>
-      {isNew ? <div className="box1-eclise"></div> : null}
-      <p className={isNew ? "offer1-text1" : null}>{name}</p>
-      {isNew ? <p className="offer1-text2">(nowość)</p> : null}
+    <div
+      className={
+        isNew
+          ? classes.offerBox1 + " " + classes.box
+          : classes.offerBox + " " + classes.box
+      }
+    >
+      {isNew ? <div className={classes.box1Eclise}></div> : null}
+      <p className={isNew ? classes.offer1Text1 : null}>{name}</p>
+      {isNew ? <p className={classes.offer1Text2}>(nowość)</p> : null}
     </div>
   );
 };

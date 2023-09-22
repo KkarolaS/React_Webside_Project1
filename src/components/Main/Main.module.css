@@ -1,0 +1,58 @@
+.landingPage {
+  height: 100vh;
+  top: 0;
+  background-image: url(../../assets/image/background-photo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+}
+
+.landingPageShadow {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.mainSlogan {
+  width: 90%;
+  margin-top: 40%;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.secondSlogan {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+@media screen and (min-width: 577px) {
+  .mainSlogan {
+    width: 80%;
+    margin-top: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .landingPageShadow {
+    padding: 10px 0;
+  }
+
+  .mainSlogan {
+    width: 60%;
+    margin-top: 25%;
+  }
+
+  .secondSlogan {
+    margin-top: 60px;
+  }
+}

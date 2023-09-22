@@ -1,9 +1,10 @@
 import OfferBox from "./OfferBox";
 import { offerData } from "../../../data/offerData";
+import classes from "./OfferBoxesWrapper.module.css";
 
 const OfferBoxesWrapper = () => {
   return (
-    <section className="offer-container">
+    <section className={classes.offerContainer}>
       {offerData.map(({ id, name, isNew }) => (
         <OfferBox key={id} name={name} isNew={isNew} />
       ))}

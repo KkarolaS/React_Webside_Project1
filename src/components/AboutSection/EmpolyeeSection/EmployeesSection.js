@@ -1,12 +1,15 @@
 import EmpolyeeInfo from "./EmpolyeeInfo";
 import { employeeData } from "../../../data/employeeData";
+import classes from "./EmployeeSection.module.css";
 
 const EmployeesSection = () => {
   return (
-    <div className="employees-container">
+    <div className={classes.employeesContainer}>
       {employeeData.map(
         ({ id, isOdd, name, surname, position, info, imageUrl }) => (
           <EmpolyeeInfo
+            classNameEmployee={classes.employee}
+            classNameEmpInfo={classes.employeeInfo}
             key={id}
             isOdd={isOdd}
             name={name}

@@ -1,0 +1,48 @@
+.employeesContainer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 21px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 50px;
+  align-items: center;
+}
+
+.employee {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  text-align: justify;
+}
+
+.employeeInfo {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 992px) {
+  .employeesContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .employee {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .employeesContainer .employee:nth-of-type(even) {
+    .employeeInfo {
+      order: -1;
+      text-align: right;
+    }
+  }
+
+  .employeeInfo {
+    width: 70%;
+  }
+}

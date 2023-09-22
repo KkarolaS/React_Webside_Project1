@@ -1,4 +1,4 @@
-.page-footer {
+.pageFooter {
   background-color: rgba(78, 78, 78, 1);
   color: rgba(255, 255, 255, 1);
   height: 100px;
@@ -17,7 +17,7 @@
     margin: 0 auto;
   }
 
-  .page-footer {
+  .pageFooter {
     height: 70px;
     padding: 10px 0;
     flex-direction: row;

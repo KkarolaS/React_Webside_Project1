@@ -1,0 +1,27 @@
+.linkContainer {
+  display: none;
+}
+
+@media screen and (min-width: 577px) {
+  .linkContainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .linkContainer {
+    list-style-type: none;
+    display: flex;
+    gap: 45px;
+  }
+
+  .navLink {
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+
+  .navContact {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
