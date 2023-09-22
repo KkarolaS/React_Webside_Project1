@@ -18,7 +18,7 @@ https://github.com/KkarolaS/React_Webside_Project1.git
 Here you can find link to Netlify Repo:
 
 ```bash
-
+https://reactwebside-kkarolas.netlify.app/
 ```
 
 ## Authors and acknowledgment
