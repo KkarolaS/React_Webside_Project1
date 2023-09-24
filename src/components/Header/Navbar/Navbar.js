@@ -11,7 +11,7 @@ const Navbar = () => {
         name={"oferta"}
       />
       <NavItem
-        className={classes.navLink + " " + classes.navContact}
+        className={`${classes.navLink} ${classes.navContact}`}
         linkName={"#"}
         name={"kontakt"}
       />

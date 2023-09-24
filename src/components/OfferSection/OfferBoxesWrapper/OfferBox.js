@@ -5,13 +5,13 @@ const OfferBox = ({ name, isNew }) => {
     <div
       className={
         isNew
-          ? classes.offerBox1 + " " + classes.box
-          : classes.offerBox + " " + classes.box
+          ? `${classes.newOfferBox} ${classes.box}`
+          : `${classes.offerBox} ${classes.box}`
       }
     >
-      {isNew ? <div className={classes.box1Eclise}></div> : null}
-      <p className={isNew ? classes.offer1Text1 : null}>{name}</p>
-      {isNew ? <p className={classes.offer1Text2}>(nowość)</p> : null}
+      {isNew ? <div className={classes.newBoxEclise}></div> : null}
+      <p className={isNew ? classes.newOfferName : null}>{name}</p>
+      {isNew ? <p className={classes.newOfferText}>(nowość)</p> : null}
     </div>
   );
 };

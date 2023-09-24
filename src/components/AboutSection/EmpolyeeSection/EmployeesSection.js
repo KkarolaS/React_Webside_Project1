@@ -6,12 +6,12 @@ const EmployeesSection = () => {
   return (
     <div className={classes.employeesContainer}>
       {employeeData.map(
-        ({ id, isOdd, name, surname, position, info, imageUrl }) => (
+        ({ id, name, surname, position, info, imageUrl }, index) => (
           <EmpolyeeInfo
             classNameEmployee={classes.employee}
             classNameEmpInfo={classes.employeeInfo}
             key={id}
-            isOdd={isOdd}
+            isOdd={(index + 1) % 2 === 0 ? true : false}
             name={name}
             surname={surname}
             position={position}

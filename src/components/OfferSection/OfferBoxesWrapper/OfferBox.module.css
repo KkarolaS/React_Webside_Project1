@@ -9,12 +9,12 @@
   align-items: center;
 }
 
-.offerBox1 {
+.newOfferBox {
   flex-direction: column;
   position: relative;
 }
 
-.box1Eclise {
+.newBoxEclise {
   width: 35px;
   aspect-ratio: 1;
   background-color: rgba(224, 122, 100, 1);
@@ -24,13 +24,13 @@
   left: -17px;
 }
 
-.offer1Text1,
+.newOfferName,
 .offerBox {
   font-size: 24px;
   font-weight: 400;
 }
 
-.offer1Text2 {
+.newOfferText {
   font-size: 18px;
   font-weight: 400;
 }
@@ -46,7 +46,7 @@
     transform: scale(1.05);
   }
 
-  .box1Eclise {
+  .newBoxEclise {
     width: 22px;
     height: 22px;
     top: -10px;

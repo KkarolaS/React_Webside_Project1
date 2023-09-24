@@ -13,7 +13,7 @@ const EmpolyeeInfo = ({
   return (
     <section
       className={
-        isOdd ? classNameEmployee + " " + classes.container : classNameEmployee
+        isOdd ? `${classNameEmployee} ${classes.container}` : classNameEmployee
       }
     >
       <img
