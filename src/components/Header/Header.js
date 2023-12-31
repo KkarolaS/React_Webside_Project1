@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className={`${classes.pageNavbar} ${classes.header}`}>
       <div className={`${classes.container} ${classes.pageNavbar}`}>
-        <div className={classes.companyName}>moja firma</div>
+        <div className={classes.companyName}>my company</div>
         <Navbar />
       </div>
     </header>

@@ -11,7 +11,7 @@ const OfferBox = ({ name, isNew }) => {
     >
       {isNew ? <div className={classes.newBoxEclise}></div> : null}
       <p className={isNew ? classes.newOfferName : null}>{name}</p>
-      {isNew ? <p className={classes.newOfferText}>(nowość)</p> : null}
+      {isNew ? <p className={classes.newOfferText}>(new)</p> : null}
     </div>
   );
 };

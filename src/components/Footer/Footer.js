@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={classes.pageFooter}>
       <div className={`${classes.container} ${classes.pageFooter}`}>
-        <p>Nazwa firmy - wszelkie prawa zastrzeżone, 2023</p>
+        <p>Company's name - All rights reserved, 2023</p>
         <SocialContactWrapper />
       </div>
     </footer>

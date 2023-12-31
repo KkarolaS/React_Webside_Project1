@@ -4,16 +4,16 @@ import classes from "./Navbar.module.css";
 const Navbar = () => {
   return (
     <nav className={classes.linkContainer}>
-      <NavItem className={classes.navLink} linkName={"#about"} name={"o nas"} />
       <NavItem
         className={classes.navLink}
-        linkName={"#offer"}
-        name={"oferta"}
+        linkName={"#about"}
+        name={"about us"}
       />
+      <NavItem className={classes.navLink} linkName={"#offer"} name={"offer"} />
       <NavItem
         className={`${classes.navLink} ${classes.navContact}`}
         linkName={"#"}
-        name={"kontakt"}
+        name={"contact"}
       />
     </nav>
   );

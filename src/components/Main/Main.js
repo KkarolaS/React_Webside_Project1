@@ -7,10 +7,10 @@ const Main = () => {
       <div className={classes.landingPageShadow}>
         <div className={classes.container}>
           <h1 className={classes.mainSlogan}>
-            Nasza firma oferuje najwyższej jakości produkty
+            Our company offers the highest quality products
           </h1>
           <h2 className={classes.secondSlogan}>
-            Nie wierz nam na słowo - sprawdź
+            Don't take our word for it - check it out
           </h2>
           <Button />
         </div>

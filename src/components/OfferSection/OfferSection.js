@@ -6,7 +6,7 @@ const OfferSection = () => {
     <section id="offer" className={classes.offer}>
       <div className={classes.offerShadow}>
         <div className={classes.container}>
-          <h1 className={classes.offerTitle}>Czym zajmuje się nasza firma?</h1>
+          <h1 className={classes.offerTitle}>What does our company do?</h1>
           <OfferBoxesWrapper />
         </div>
       </div>
